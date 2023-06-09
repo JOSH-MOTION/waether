@@ -1,8 +1,8 @@
 import "./App.css";
 import TopButton from "./WeatherComp/TopButton"
 import Inputs from "./WeatherComp/Inputs";
-import TimeAndLocation from "./TimeAndLocation"
-import TemperatureAndDetails from "./TemperatureAndDetails";
+import TimeAndLocation from "./WeatherComp/TimeAndLocation"
+import TemperatureAndDetails from "./WeatherComp/TemperatureAndDetails";
 import Forecast from "./Forecast";
 import getFormattedWeatherData from "./services/weatherService";
 import { useEffect, useState } from "react";
@@ -10,7 +10,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  const [query, setQuery] = useState({ q: "berlin" });
+  const [query, setQuery] = useState({ q: "Ghana" });
   const [units, setUnits] = useState("metric");
   const [weather, setWeather] = useState(null);
 
